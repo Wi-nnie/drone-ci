@@ -26,7 +26,7 @@ git clone --depth=1 $DT_LINK $DT_PATH
 echo " ===+++ Building Recovery +++==="
 export ALLOW_MISSING_DEPENDENCIES=true
 export TW_THEME=portrait_hdpi
-export BOARD_HAS_NO_REAL_SDCARD=true
+export TW_NO_USB_STORAGE=true
 export BOARD_RECOVERYIMAGE_PARTITION_SIZE=16384000
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
