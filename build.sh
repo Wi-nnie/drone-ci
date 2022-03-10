@@ -12,17 +12,16 @@ repo init --depth=1  --partial-clone --clone-filter=blob:limit=10M -u git://gith
 
 repo sync -j$(nproc --all)
 
-git clone https://github.com/hraj9258/twrp_phoenix -b a11 device/xiaomi/phoenix
-
+git clone https://github.com/Wi-nnie/Tecno-KD7-PBRP -bKD7_ten  device/tecno/KD7
 rm -rf out
 
-. build/envsetup.sh && lunch omni_phoenix-eng && export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C" && mka recoveryimage
+. build/envsetup.sh && lunch omni_KD7-eng && export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C" && mka recoveryimage
 
 # Upload zips & recovery.img (U can improvise lateron adding telegram support etc etc)
 
 cd out/target/product/phoenix
 
-sudo zip -r9 TWRP-phoenix-a11.zip recovery.img
+sudo zip -r9 TWRP-KD7-a11.zip recovery.img
 
 curl -sL https://git.io/file-transfer | sh 
 
