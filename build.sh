@@ -4,9 +4,9 @@
 
 # Edited for Tecno Pop 2 Power
 
-MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-6.0"
-DEVICE=B1p
-DT_LINK="https://github.com/Wi-nnie/B1p-Twrp-Device-Tree -b pbrp"
+MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
+DEVICE=KD7
+DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b KD7_ten"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
@@ -25,7 +25,6 @@ git clone --depth=1 $DT_LINK $DT_PATH
 echo " ===+++ Building Recovery +++==="
 export ALLOW_MISSING_DEPENDENCIES=true
 export TW_THEME=portrait_hdpi
-export BOARD_RECOVERYIMAGE_PARTITION_SIZE=16384000
 . build/envsetup.sh
 echo " source build/envsetup.sh done"
 lunch omni_${DEVICE}-eng || abort " lunch failed with exit status $?"
