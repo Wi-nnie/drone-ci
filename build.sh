@@ -4,7 +4,7 @@
 
 # Edited for Tecno Pop 2 Power
 
-MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
+MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
 DEVICE=KD7
 DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b KD7_ten"
 DT_PATH=device/tecno/$DEVICE
