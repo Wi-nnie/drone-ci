@@ -6,7 +6,7 @@
 
 MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
 DEVICE=KD7
-DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b android-10.0"
+DT_LINK="https://github.com/twrpdtgen/android_device_tecno_TECNO-KD7 -b full_kd7_h6211-user-10-QP1A.190711.020-44905-release-keys"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
