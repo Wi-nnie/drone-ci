@@ -2,11 +2,11 @@
 
 # Just a basic script U can improvise lateron asper ur need xD 
 
-# Edited for Tecno Pop 2 Power
+# Edited for Tecno spark 5 Pro
 
-MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
+MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
 DEVICE=KD7
-DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b KD7_ten"
+DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b android-10.0"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
