@@ -7,7 +7,7 @@
 MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11"
 DEVICE=TECNO_CD8
 DT_LINK="https://github.com/Dimonnemo64/TWRP-MT6765-CD8 -b main"
-DT_PATH=device/tecno/$DEVICE
+DT_PATH=device/tecno
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
