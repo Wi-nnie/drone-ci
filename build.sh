@@ -4,7 +4,7 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11"
+MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
 DEVICE=TECNO_CD8
 DT_LINK="https://github.com/Dimonnemo64/TWRP-MT6765-CD8 -b main"
 DT_PATH=device/tecno
