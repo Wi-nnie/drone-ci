@@ -6,8 +6,8 @@
 
 MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
 DEVICE=TECNO_CD8
-DT_LINK="https://github.com/Dimonnemo64/TWRP-MT6765-CD8"
-DT_PATH=device/tecno
+DT_LINK="https://github.com/Dimonnemo64/TWRP-MT6765-CD8 -b main"
+DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
