@@ -47,12 +47,12 @@ apt-get -qq update \
     zlib1g-dev \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
-curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod a+x /bin/repo
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 mkdir ~/twrp && cd ~/twrp
 
 echo " ===+++ Syncing Recovery Sources +++==="
-python3 repo init --depth=1 -u $MANIFEST
-python3 repo sync
+python3 ~/bin/repo init --depth=1 -u $MANIFEST
+python3 ~/bin/repo sync
 echo " ===+++ Cloning Device Tree +++==="
 git clone --depth=1 $DT_LINK $DT_PATH
 
