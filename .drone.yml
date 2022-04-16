@@ -9,7 +9,7 @@ platform:
 
 steps:
 - name: Start syncing && Compiling
-  image: surendrajat/twrp-builder
+  image: python:slim
   commands:
 
   - bash build.sh
