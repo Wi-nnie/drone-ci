@@ -51,8 +51,12 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod
 mkdir ~/twrp && cd ~/twrp
 
 echo " ===+++ Syncing Recovery Sources +++==="
-python3 /bin/repo init --depth=1 -u $MANIFEST
-python3 /bin/repo sync
+git config --global user.name Wi-nnie
+git config --global user.email 94724733+Wi-nnie@users.noreply.github.com
+git config --global credential.helper store
+
+repo init --depth=1 -u $MANIFEST
+repo sync
 echo " ===+++ Cloning Device Tree +++==="
 git clone --depth=1 $DT_LINK $DT_PATH
 
