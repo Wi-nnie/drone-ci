@@ -7,7 +7,7 @@
 MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0"
 DEVICE=TECNO_CD8j
 DT_LINK="https://github.com/Wi-nnie/TECNO-CD8J-RECOVERY-TREE -b main"
-DT_PATH=device/tecno
+DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
