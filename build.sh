@@ -51,8 +51,8 @@ curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod
 mkdir ~/twrp && cd ~/twrp
 
 echo " ===+++ Syncing Recovery Sources +++==="
-repo init --depth=1 -u $MANIFEST
-repo sync
+python3 repo init --depth=1 -u $MANIFEST
+python3 repo sync
 echo " ===+++ Cloning Device Tree +++==="
 git clone --depth=1 $DT_LINK $DT_PATH
 
