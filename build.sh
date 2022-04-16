@@ -5,7 +5,7 @@
 # Edited for Tecno spark 5 Pro
 
 MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0"
-DEVICE=TECNO-CD8j
+DEVICE=TECNO_CD8j
 DT_LINK="https://github.com/samuelKuseka/TECNO-CD8J-RECOVERY-TREE -b main"
 DT_PATH=device/tecno
 
@@ -21,6 +21,7 @@ repo init --depth=1 -u $MANIFEST
 repo sync
 echo " ===+++ Cloning Device Tree +++==="
 git clone --depth=1 $DT_LINK $DT_PATH
+cp $DT_PATH/omni_TECNO-CD8j.mk $DT_PATH/omni_TECNO_CD8j.mk
 
 echo " ===+++ Building Recovery +++==="
 export ALLOW_MISSING_DEPENDENCIES=true
