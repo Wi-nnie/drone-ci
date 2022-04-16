@@ -14,6 +14,41 @@ apt install openssh-server -y
 apt update --fix-missing
 apt install openssh-server -y
 apt install openjdk-8-jdk -y
+apt-get -qq update \
+    && apt-get install -y --no-install-recommends \
+    bc \
+    bison \
+    build-essential \
+    ccache \
+    curl \
+    flex \
+    gcc-multilib \
+    git \
+    g++-multilib \
+    gnupg \
+    gperf \
+    lib32ncurses5-dev \
+    lib32z-dev \
+    libc6-dev-i386 \
+    libgl1-mesa-dev \
+    libx11-dev \
+    libxml2-utils \
+    lzop \
+    make \
+    maven \
+    openjdk-8-jdk \
+    python3 \
+    rsync \
+    schedtool \
+    unzip \
+    x11proto-core-dev \
+    xsltproc \
+    zip \
+    zlib1g-dev \
+    && apt-get purge openjdk-11-jre-headless -y \
+    && apt-get autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
+curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod a+x /bin/repo
 mkdir ~/twrp && cd ~/twrp
 
 echo " ===+++ Syncing Recovery Sources +++==="
