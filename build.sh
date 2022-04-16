@@ -14,6 +14,9 @@ apt install openssh-server -y
 apt update --fix-missing
 apt install openssh-server -y
 apt install openjdk-8-jdk -y
+apt-get install software-properties-common
+apt-add-repository 'deb http://security.debian.org/debian-security stretch/updates main'
+apt-get update
 apt-get -qq update \
     && apt-get install -y --no-install-recommends \
     bc \
