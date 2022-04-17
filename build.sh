@@ -4,7 +4,7 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/omnirom/android/tree/android-12.0 -b android-12.0"
+MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
 DEVICE=TECNO_CD8j
 DT_LINK="https://github.com/Wi-nnie/TECNO-CD8J-RECOVERY-TREE -b main"
 DT_PATH=device/tecno/$DEVICE
