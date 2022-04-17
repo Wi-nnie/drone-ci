@@ -75,7 +75,7 @@ echo " mka recoveryimage done"
 
 # Upload zips & recovery.img (U can improvise lateron adding telegram support etc etc)
 echo " ===+++ Uploading Recovery +++==="
-cd /root/twrp/out/target/product/B1p/
+cd /root/twrp/out/target/product/TECNO_CD8j/
 curl -sL https://git.io/file-transfer | sh 
 
 ./transfer wet *.zip
