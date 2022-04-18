@@ -4,9 +4,9 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1"
+MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
 DEVICE=TECNO_KD7
-DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b master"
+DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b main"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
