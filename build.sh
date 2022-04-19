@@ -2,10 +2,10 @@
 
 # Just a basic script U can improvise lateron asper ur need xD 
 
-MANIFEST="git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0"
-DEVICE=phoenix
-DT_LINK="https://github.com/hraj9258/android_device_xiaomi_phoenix_shrp"
-DT_PATH=device/xiaomi/$DEVICE
+MANIFEST="https://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0"
+DEVICE=TECNO_KD7
+DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b master"
+DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
