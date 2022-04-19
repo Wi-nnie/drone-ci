@@ -4,10 +4,10 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
-DEVICE=TECNO_KD7
-DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b alpha"
-DT_PATH=device/tecno/$DEVICE
+MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1"
+DEVICE=X683
+DT_LINK="https://github.com/mastersenpai0405/recovery_device_infinix_X683"
+DT_PATH=device/infinix/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
 apt install openssh-server -y
