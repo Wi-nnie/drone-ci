@@ -5,8 +5,8 @@
 # Edited for Tecno spark 5 Pro
 
 MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0-deprecated"
-DEVICE=TECNO_KD7
-DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b xperiment"
+DEVICE=KD7
+DT_LINK="https://github.com/Wi-nnie/Tecno-KD7-PBRP -b patch"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
@@ -75,7 +75,7 @@ echo " mka recoveryimage done"
 
 # Upload zips & recovery.img (U can improvise lateron adding telegram support etc etc)
 echo " ===+++ Uploading Recovery +++==="
-cd /root/twrp/out/target/product/TECNO_KD7/
+cd /root/twrp/out/target/product/${DEVICE}/
 curl -sL https://git.io/file-transfer | sh 
 
 ./transfer wet *.zip
