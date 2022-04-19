@@ -4,7 +4,7 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1"
+MANIFEST="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0-deprecated"
 DEVICE=X683
 DT_LINK="https://github.com/mastersenpai0405/recovery_device_infinix_X683"
 DT_PATH=device/infinix/$DEVICE
