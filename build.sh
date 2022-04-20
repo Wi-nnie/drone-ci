@@ -4,7 +4,7 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
+MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-10.0"
 DEVICE=TECNO_KD7
 DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b main"
 DT_PATH=device/tecno/$DEVICE
