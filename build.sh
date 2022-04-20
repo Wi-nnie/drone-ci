@@ -4,9 +4,9 @@
 
 # Edited for Tecno spark 5 Pro
 
-MANIFEST="git://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
-DEVICE=KD7
-DT_LINK="https://github.com/twrpdtgen/android_device_tecno_TECNO-KD7 -b full_kd7_h6211-user-10-QP1A.190711.020-44905-release-keys"
+MANIFEST="https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0"
+DEVICE=TECNO_KD7
+DT_LINK="https://github.com/Wi-nnie/twrp_device_tecno_KD7 -b main"
 DT_PATH=device/tecno/$DEVICE
 
 echo " ===+++ Setting up Build Environment +++==="
@@ -34,7 +34,7 @@ echo " mka recoveryimage done"
 
 # Upload zips & recovery.img (U can improvise lateron adding telegram support etc etc)
 echo " ===+++ Uploading Recovery +++==="
-cd /root/twrp/out/target/product/B1p/
+cd /root/twrp/out/target/product/$DEVICE/
 curl -sL https://git.io/file-transfer | sh 
 
 ./transfer wet *.zip
